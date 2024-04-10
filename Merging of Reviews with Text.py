@@ -14,7 +14,7 @@ file2_df = file2_df.drop_duplicates(subset='text')
 merged_df = pd.merge(file1_df, file2_df, on='text', how='inner')
 
 # Remove specified columns
-columns_to_remove = ['user_id_y', 'time_y', 'pics_y', 'resp_y']
+columns_to_remove = ['user_id', 'time', 'pics', 'resp']
 merged_df = merged_df.drop(columns=columns_to_remove, errors='ignore')
 
 # Create a new column for the difference between 'Sentiment_x' and 'Sentiment_y'
