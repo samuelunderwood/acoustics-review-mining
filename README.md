@@ -15,3 +15,12 @@ This code file further cleans the restaurant reviews by removing all null values
 
 #### Filtered Reviews.py
 This code file opens the cleaned dataset and uses the CommonWordsandPhrases list as a filter. It will return every restaurant review that uses one of the words in the list of CommonWordsandPhrases. 
+
+#### Top 100 Words.py
+This code file looks at the cleaned restaurant review file, not the filtered review file, and extracts the top words that are used in all of the restaurant reviews. There is a list that removes words such as "a", "and", "is", "it", etc. Outputs the top words along with their occurrence rates.
+
+#### Keyword Occurrences.py
+This code file also looks at the cleaned restaurant reviews file and then filters through it using the CommonWordsandPhrases list. While filtering through, it counts how many times each of these keywords show up within all of the restaurant reviews. 
+
+#### Keyword-Rating.py
+This code file does a couple things. 
